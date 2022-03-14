@@ -1,5 +1,5 @@
 function stateDropDown() {
   var stateList = document.getElementById("stateList");
-  document.getElementById("favorite").value =
+  document.getElementById("selectedState").value =
     stateList.options[stateList.selectedIndex].text;
 }
