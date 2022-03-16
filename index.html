@@ -9,22 +9,32 @@
   </head>
   <body>
     <h1>PlantZone</h1>
+    <div>
+      <form>
+        <h2>Select Your State</h2>
+        <select id="stateList" onChange = stateDropDown()>
+            <option>--Choose State--</option>
+            <option>Arizona</option>
+            <option>Colorado</option>
+            <option>North Carolina</option>
+        </select>
+        <h2>Your Selected State Is:
+          <input type="text" id="selectedState">
+        </h2>
+        <h2>Your Zone Is:
+          <input type="text" id="zoneNumber">
+        </h2>
+      </form>
+    </div>
+    <div>
+      <p class="plantDisplay">Suggested Plant:
+        <ul>
+          <li id="plantPhoto"><img id="displayPhoto"></li>
 
-    <form>
-      <h2>Select Your State</h2>
-      <select id="stateList" onChange = stateDropDown()>
-          <option>--Choose State--</option>
-          <option>Arizona</option>
-          <option>Colorado</option>
-          <option>North Carolina</option>
-      </select>
-      <h2>Your Selected State Is:
-        <input type="text" id="selectedState">
-      </h2>
-      <h2>Your Zone Is:
-        <input type="text" id="zoneNumber">
-      </h2>
-    </form>
+          <!-- <li class="japaneseMaple">Japanese Maple</li> -->
+        </ul>
+      </p>
+    </div>
   </body>
   <script src="script.js"></script>
 </html>
